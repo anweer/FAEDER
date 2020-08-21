@@ -4280,9 +4280,8 @@ faederdx1:srem(FAEDER.."bot:groups",msg.chat_id_)
 faederdx(msg.chat_id_, msg.id_, 1, '🩸┇ تم مغادره المجموعه وحذف بياناتها ', 1, 'md')
 end
 end
-
 ------------------------------------------------------------------------------------------------------------
-if text and text == 'تفعيل وضع حسابي' and is_owner(msg.sender_user_id_, msg.chat_id_) and faeder11(msg) then  
+if text and text == 'تفعيل وضع حسابي' and is_owner(msg.sender_user_id_, msg.chat_id_) then  
 if not faederdx1:get(FAEDER..'bot:pubgacuount'..msg.chat_id_) then
 faederdx(msg.chat_id_, msg.id_, 1,'\n🩸┇تم تفعيل وضع حسابي سابقا', 'md')  
 else
@@ -4290,7 +4289,7 @@ faederdx(msg.chat_id_, msg.id_, 1,'\n🩸┇تم تفعيل وضع حسابي', 
 faederdx1:del(FAEDER..'bot:pubgacuount'..msg.chat_id_)
 end
 end
-if text and text == 'تعطيل وضع حسابي' and is_owner(msg.sender_user_id_, msg.chat_id_) and faeder11(msg) then  
+if text and text == 'تعطيل وضع حسابي' and is_owner(msg.sender_user_id_, msg.chat_id_) then  
 if faederdx1:get(FAEDER..'bot:pubgacuount'..msg.chat_id_) then
 faederdx(msg.chat_id_, msg.id_, 1,'\n🩸┇تم تعطيل وضع حسابي سابقا', 'md')
 else
@@ -4300,7 +4299,7 @@ end
 end
  -----------------------
   if not faederdx1:get(FAEDER..'bot:pubgacuount'..msg.chat_id_) then
-if (text and text == 'وضع حسابي') and faeder11(msg) then  
+if (text and text == 'وضع حسابي') then  
 faederdx(msg.chat_id_, msg.id_, 1,'\n🧼┇ارسل لي اسم حسابك  ', 'ttml')
 faederdx1:set(FAEDER..'bot:n1'..msg.sender_user_id_..'','yes')
 return false end 
@@ -4347,7 +4346,7 @@ else
 faederdx(msg.chat_id_, msg.id_, 1,'\n🧼┇لم يتم حفظ التقييم يوجد خطا ', 'html')
 return false end
 end
-if (text and text == 'مسح حسابي') and faeder11(msg) then  
+if (text and text == 'مسح حسابي') then  
 faederdx1:del(FAEDER..'bot:idacount'..msg.sender_user_id_)
 faederdx1:del(FAEDER..'bot:acctear'..msg.sender_user_id_)
 faederdx1:del(FAEDER..'bot:name_acount'..msg.sender_user_id_)
@@ -5655,7 +5654,7 @@ local user_info_ = faederdx1:get(FAEDER..'user:Name' .. result.sender_user_id_)
 local faeder_res = user_info_
 if user_info_ then
 HTTPS.request("https://api.telegram.org/bot" .. tokenbot .. "/promoteChatMember?chat_id=" .. msg.chat_id_ .. "&user_id=" ..result.sender_user_id_.."&can_change_info=True&can_delete_messages=True&can_invite_users=True&can_restrict_members=True&can_pin_messages=True&can_promote_members=True")
-faederdx(msg.chat_id_, msg.id_, 1, '🧼┇ *العضو* ( ['..faeder_res..'] )\n🩸┇ *ايديه* ( *'..result.sender_user_id_..'* )\n⏱┇ *بواسطه ( '..renk_faeder(msg)..' )*\n☑️┇ *تم رفعه ( ادمن بالكروب بكل الصلاحيات )\n🧼┇ صلاحياته الان \n☑️┇ تغيير اسم المجموعه \n☑️┇ حذف الرسائل \n☑️┇ الدعوه بالرابط \n☑️┇ تثبيت الرسائل \n☑️┇ اضافه مشرفين *', 1, 'md')
+faederdx(msg.chat_id_, msg.id_, 1, '🧼┇ *العضو* ( ['..faeder_res..'] )\n🩸┇ *ايديه* ( *'..result.sender_user_id_..'* )\n⏱┇ *بواسطه ( '..renk_faeder(msg)..' )*\n☑️┇ *تم رفعه ( ادمن بالكروب بكل الصلاحيات )\n??┇ صلاحياته الان \n☑️┇ تغيير اسم المجموعه \n☑️┇ حذف الرسائل \n☑️┇ الدعوه بالرابط \n☑️┇ تثبيت الرسائل \n☑️┇ اضافه مشرفين *', 1, 'md')
 end
 end
 getMessage(msg.chat_id_, msg.reply_to_message_id_,promote_by_reply)
