@@ -30,7 +30,7 @@ echo -e "\e[38;5;77m       •{ install source Faeder [20%]  }•\e[0m"
 
 sudo apt-get install software-properties-common -y
 sudo add-apt-repository ppa:ubuntu-toolchain-r/test -y
-sudo apt-get install libstdc++6 -y
+sudo apt-get install libstdc++6 -y 
 
 echo -e "\e[38;5;77m       •{ install source Faeder [30%]  }•\e[0m"
 
