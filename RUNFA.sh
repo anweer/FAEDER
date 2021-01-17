@@ -74,15 +74,14 @@ sudo apt-get install libnotify-dev -y
 echo -e "\e[38;5;77m       •{ install source Faeder [100%]  }•\e[0m"
 echo -e "\e[38;5;77m       •{ •{ Join the Source Channel : @faeder_ch }• }•\e[0m"
 
-echo -e "\e[38;5;77m       _____ _    _____ ____  _____ ____\e[0m"
-echo -e "\e[38;5;77m       |  ___/ \  | ____|  _ \| ____|  _ \\e[0m"
+echo -e "\e[38;5;77m       _ _    _ __  ___ __\e[0m"
+echo -e "\e[38;5;77m       |  _/ \  | __|  _ \| __|  _ \\e[0m"
 echo -e "\e[38;5;77m       | |_ / _ \ |  _| | | | |  _| | |_) |\e[0m"
-echo -e "\e[38;5;77m       |  _/ ___ \| |___| |_| | |___|  _ <\e[0m"
-echo -e "\e[38;5;77m       |_|/_/   \_\_____|____/|_____|_| \_\\e[0m"
+echo -e "\e[38;5;77m       |  _/ _ \| |_| |_| | |_|  _ <\e[0m"
+echo -e "\e[38;5;77m       |_|/_/   \_\___|__/|___|_| \_\\e[0m"
 
 echo -e "\e[38;5;77m       •{ Faeder source has been installed }•\e[0m"
 echo -e "\e[38;5;77m       •{ Source developer : @Pro_c9 }•\e[0m"
 
 ./tg -s FAEDER.lua
 fi
-
